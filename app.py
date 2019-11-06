@@ -12,10 +12,12 @@ print('Working path: {}'.format(DEFAULTPATH))
 print('Random files path: {}'.format(RANDOMFILESPATH))
 print('Sorted files path: {}'.format(SORTEDFILESPATH))
 
+func.CreateDir(RANDOMFILESPATH)
+func.CreateDir(SORTEDFILESPATH)
+
 gotFiles = func.GetFilesFromDir(RANDOMFILESPATH)
 
 for file in gotFiles:
-    #data = time.ctime(os.path.getctime(RANDOMFILESPATH + file))
     temp = datetime.datetime.fromtimestamp(
         os.path.getctime(RANDOMFILESPATH + file))
     date = temp.strftime("%Y_%m_%d")

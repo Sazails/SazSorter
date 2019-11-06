@@ -13,6 +13,9 @@ def GetFilesFromDir(chosenDir):
 
 def CreateDir(chosenDir):
     """ Create directory at ("chosenDir") """
+    if os.path.exists(chosenDir):
+        print('Directory: {} already exists!'.format(chosenDir))
+        return
     path = chosenDir
     os.makedirs(path)
     print('Created directory: {}'.format(path))
