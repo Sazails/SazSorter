@@ -3,5 +3,6 @@ Sorts files from the 'RandomFiles' folder, into the 'SortedFiles', with subfolde
 
 ### Instructions
 -Put files in RandomFiles folder.
+
 -Run app.py.
 
