@@ -1,7 +1,7 @@
 # SazSorter
 
 ### What does it do?
-The execution of 'app.py' allows files from the 'RandomFiles' folder, to be transfered into the 'SortedFiles' folder subfolder, which gets automatically created, depending on the date the file being transferred, was created. 
+The execution of 'run.exe' allows files from the 'RandomFiles' folder, to be transfered into the 'SortedFiles' folder subfolder, which gets automatically created, depending on the date the file being transferred, was created. 
 
 ### Why did I create this?
 I wanted to learn how python handles creating/deleting/moving files. I had bunch of files lying around in one of my folders and instead of doing this by hand, I decided to create a script that does it automatically for me.
