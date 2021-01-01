@@ -1,10 +1,22 @@
 # SazSorter
 
-### What does it do?
-The execution of 'run.exe' allows files from the 'RandomFiles' folder, to be transfered into the 'SortedFiles' folder subfolder, which gets automatically created, depending on the date the file being transferred, was created. 
+### The Function
+<ol>
+<li>Create the required folders for file transfer. (RandomFiles & SortedFiles)</li>
+<li>Get all files from the RandomFiles folder.</li>
+<li>Copy files from RandomFiles folder to the SortedFiles folder, creating a new folder with the date (file creation date) of the file being transfered.</li>
+</ol>
 
-### Why did I create this?
-I wanted to learn how python handles creating/deleting/moving files. I had bunch of files lying around in one of my folders and instead of doing this by hand, I decided to create a script that does it automatically for me.
+### Reason of creation
+Tired of moving all the items manually, I decided to automate it using python.  
 
-### What would I like to add to this?
-Add a GUI interface as that is what I have been looking into recently. It would allow you to choose the output folder, and few other options for sorting out the files, such as the name, modified-date, creation-date and file-size.
+### How to use
+<ol>
+<li>Copy unsorted files into the RandomFiles folder. If the folder does not exist, then run the app.py with python, as it will create the required folders.</li>
+<li>Run app.py file with python.</li>
+<li>Sorted files will now be in the SortedFiles folder.</li>
+</ol>
+
+### Needed improvements / features
+- More file sorting options, such as sorting by name, file type.
+- Graphical user interface.

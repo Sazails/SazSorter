@@ -1,10 +1,10 @@
 import functions as func
 
-import os
-import time
-import datetime
+import os as _os
+import time as _time
+import datetime as _dateTime
 
-DEFAULTPATH = os.getcwd()
+DEFAULTPATH = _os.getcwd()
 RANDOMFILESPATH = DEFAULTPATH + '\\RandomFiles\\'
 SORTEDFILESPATH = DEFAULTPATH + '\\SortedFiles\\'
 
@@ -18,8 +18,7 @@ func.CreateDir(SORTEDFILESPATH)
 gotFiles = func.GetFilesFromDir(RANDOMFILESPATH)
 
 for file in gotFiles:
-    temp = datetime.datetime.fromtimestamp(
-        os.path.getctime(RANDOMFILESPATH + file))
+    temp = _dateTime.datetime.fromtimestamp(
+        _os.path.getctime(RANDOMFILESPATH + file))
     date = temp.strftime("%Y_%m_%d")
-    func.MoveFile(RANDOMFILESPATH + file,
-                  '{}{}'.format(SORTEDFILESPATH, date))
+    func.MoveFile(RANDOMFILESPATH + file, '{}{}'.format(SORTEDFILESPATH, date))
