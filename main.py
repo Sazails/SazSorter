@@ -1,6 +1,27 @@
 import os as _os
+import time as _time
 import shutil as _shutil
+import datetime as _dateTime
 
+DEFAULTPATH = _os.getcwd()
+RANDOMFILESPATH = DEFAULTPATH + '\\RandomFiles\\'
+SORTEDFILESPATH = DEFAULTPATH + '\\SortedFiles\\'
+
+print('Working path: {}'.format(DEFAULTPATH))
+print('Random files path: {}'.format(RANDOMFILESPATH))
+print('Sorted files path: {}'.format(SORTEDFILESPATH))
+
+CreateDir(RANDOMFILESPATH)
+CreateDir(SORTEDFILESPATH)
+
+gotFiles = GetFilesFromDir(RANDOMFILESPATH)
+
+for file in gotFiles:
+    temp = _dateTime.datetime.fromtimestamp(
+        _os.path.getctime(RANDOMFILESPATH + file))
+    date = temp.strftime("%Y_%m_%d")
+    MoveFile(RANDOMFILESPATH + file, '{}{}'.format(SORTEDFILESPATH, date))
+    
 
 def GetFilesFromDir(chosenDir):
     """ Returns a file/files from the chosen directory. """
