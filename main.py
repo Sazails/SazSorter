@@ -61,3 +61,5 @@ for file in gotFiles:
         _os.path.getctime(RANDOMFILESPATH + file))
     date = temp.strftime("%Y_%m_%d")
     MoveFile(RANDOMFILESPATH + file, '{}{}'.format(SORTEDFILESPATH, date))
+
+input("Press Enter to exit...")
