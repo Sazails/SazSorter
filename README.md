@@ -1,17 +1,19 @@
-### SAZSORTER
-SazSorter is a python script which sorts and moves files from a folder named "RandomFiles" to a folder named "SortedFiles".
+# SazSorter
 
-### INSTRUCTIONS
-Before you actually use this script or any other script which touches your files, make a backup!. By the way, this is speaking from experience! :o
+## Overview
+SazSorter is a file organization tool written in Python. It provides a graphical user interface (GUI) that allows users to select a source folder containing files and a destination folder where the sorted files will be moved. The program then moves the files from the source folder to the destination folder, organizing them based on their creation date.
 
-Lets get to the actual instructions: 
+The program also offers an option to create separate folders for each file extension, allowing users to further organize their files. The GUI displays activity logs, informing users about the progress and any errors that may occur during the file sorting process.
 
-<ol>
-<li>Copy the files you want to sort with this script into the "RandomFiles" folder. If the folder doesn't exist, run the script first.</li>
-<li>Once the files have been placed in the "RandomFiles" folder, run the script.</li>
-<li>Your random files will now be in the "SortedFiles" folder.</li>
-</ol>
+## Usage
+To use SazSorter, follow these steps:
+1. Launch the program.
+2. Select the source folder containing the files you want to organize.
+3. Choose the destination folder where the sorted files will be moved.
+4. Optionally, enable the option to create separate folders for each file extension.
+5. Click the "Move files" button to start the file sorting process.
 
-### NEEDED IMPROVEMENTS
-- Graphical User Interface (GUI)
-- Sorting options by name/file type...
+## Output
+During the file sorting process, SazSorter will display activity logs in the GUI. These logs will inform you about the progress of the sorting process and any errors that may occur.
+
+Overall, SazSorter aims to simplify the process of organizing files, making it easier to manage and find specific files.
