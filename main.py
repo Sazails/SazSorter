@@ -140,6 +140,7 @@ def create_gui():
     source_folder_path = tk.StringVar()
     source_folder_path_entry = tk.Entry(root, textvariable=source_folder_path, state="readonly")
 
+<<<<<<< HEAD
     destination_folder_button = tk.Button(root, text="Destination folder", command=select_destination_folder, width=20)
     destination_folder_path = tk.StringVar()
     destination_folder_path_entry = tk.Entry(root, textvariable=destination_folder_path, state="readonly")
@@ -182,3 +183,12 @@ def create_gui():
 
 if __name__ == "__main__":
     create_gui()
+=======
+for file in gotFiles:
+    temp = _dateTime.datetime.fromtimestamp(
+        _os.path.getctime(RANDOMFILESPATH + file))
+    date = temp.strftime("%Y_%m_%d")
+    MoveFile(RANDOMFILESPATH + file, '{}{}'.format(SORTEDFILESPATH, date))
+
+input("Press Enter to exit...")
+>>>>>>> 593e4c7789ffbfaf64a0740d9f9f53529846d1c9
